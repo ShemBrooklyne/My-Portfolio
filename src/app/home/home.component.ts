@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'Pizza-Waver Web App', image: 'assets/projects/pizdem.png', desc: 'Developed using Basic Html,CSS,Bootstrap and Javascript, ' +
         'I made this web application as an educational project while at in Moringa School. ' + ' Initially, the main purpose of the application was to therefore assist both the customers and pizza palace attendance to have an easy time while processing orders and ' +
-        'use.', demo: 'shembrooklyne.github.io/pizza-waver/', source: 'https://github.com/ShemBrooklyne/PIZZA-WAVER'
+        'use.', demo: 'https://shembrooklyne.github.io/PIZZA-WAVER/', source: 'https://github.com/ShemBrooklyne/PIZZA-WAVER'
     },
     {
       name: 'Github Search', image: 'assets/projects/github.png', desc: 'This is an angular app' +
