@@ -6,17 +6,13 @@
 </nav>
 
 <!-- ===============  Scroll to Top button =============== -->
-<div
-  [ngClass]="
+<div [ngClass]="
     showScrollButton ? 'scroll-button show-scroll-button' : 'scroll-button'
-  "
-  (click)="moveToTop()"
->
+  " (click)="moveToTop()">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-    <path
-      fill="currentColor"
-      d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
-    ></path>
+    <path fill="currentColor"
+      d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+    </path>
   </svg>
 </div>
 
@@ -31,28 +27,13 @@
 
   <div id="social-box">
     <a href="https://wa.link/lf4sno" target="_blank">
-      <img
-        id="whatsapp-social"
-        class="social-icons"
-        alt="Whatsapp chat Link"
-        src="assets/whatsapp.png"
-      />
+      <img id="whatsapp-social" class="social-icons" alt="Whatsapp chat Link" src="assets/whatsapp.png" />
     </a>
     <a href="https://www.instagram.com/shembrooklyne/" target="_blank">
-      <img
-        id="insta-social"
-        class="social-icons"
-        alt="Instagram Link"
-        src="assets/insta_outline.png"
-      />
+      <img id="insta-social" class="social-icons" alt="Instagram Link" src="assets/insta_outline.png" />
     </a>
     <a href="https://twitter.com/shem_brooklyne" target="_blank">
-      <img
-        id="twitter-social"
-        class="social-icons"
-        alt="Twitter Link"
-        src="assets/twitter_outline.png"
-      />
+      <img id="twitter-social" class="social-icons" alt="Twitter Link" src="assets/twitter_outline.png" />
     </a>
     <!-- <a href="https://twitter.com/shem_brooklyne" target="_blank">
       <img
@@ -74,22 +55,12 @@
         I write code, design stuff and make apps.
       </p>
       <div style="margin-top: 60px">
-        <a href="mailto:shemnyatti@gmail.com" target="_blank"
-          ><button class="button-pink">Hire Me</button></a
-        >
-        <a
-          href="https://drive.google.com/file/d/1PDNwI9vlUaoE3a4IhlFX2ThxakVCyd6Y/view?usp=sharing"
-          target="_blank"
-          ><button class="button-outline">Get Resume</button></a
-        >
+        <a href="mailto:shemnyatti@gmail.com" target="_blank"><button class="button-pink">Hire Me</button></a>
+        <a href="https://drive.google.com/file/d/1PDNwI9vlUaoE3a4IhlFX2ThxakVCyd6Y/view?usp=sharing"
+          target="_blank"><button class="button-outline">Get Resume</button></a>
       </div>
     </div>
-    <img
-      class="profile_pic"
-      id="me-one"
-      alt="main-pg"
-      src="assets/section_one_main.svg"
-    />
+    <img class="profile_pic" id="me-one" alt="main-pg" src="assets/section_one_main.svg" />
   </div>
 </div>
 
@@ -125,11 +96,7 @@
     </p>
   </div>
 
-  <img
-    id="triangle-two"
-    alt=""
-    src="assets/triangle_border_midnight_blue.svg"
-  />
+  <img id="triangle-two" alt="" src="assets/triangle_border_midnight_blue.svg" />
   <img id="triangle-three" alt="" src="assets/triangle_yellow.svg" />
 </div>
 
@@ -275,12 +242,9 @@
   </div>
 
   <div>
-    <div
-      *ngFor="let project of projects; let i = index"
-      [ngClass]="
+    <div *ngFor="let project of projects; let i = index" [ngClass]="
         i % 2 === 0 ? 'flex-container' : 'flex-container flex-container-reverse'
-      "
-    >
+      ">
       <div class="project-screenshot">
         <!--  Container for the project icon  -->
         <img src="{{ project.image }}" />
@@ -290,14 +254,8 @@
         <h3>{{ project.name }}</h3>
         <p class="color-rock-blue">{{ project.desc }}</p>
         <div style="margin-top: 60px">
-          <a href="{{ project.demo }}" target="_blank"
-            ><button class="button-pink">Demo</button></a
-          >
-          <a
-            href="{{ project.source }}"
-            target="_blank"
-            [ngClass]="project.source === '' ? 'hide' : ''"
-          >
+          <a href="{{ project.demo }}" target="_blank"><button class="button-pink">Demo</button></a>
+          <a href="{{ project.source }}" target="_blank" [ngClass]="project.source === '' ? 'hide' : ''">
             <button class="button-outline">Source</button>
           </a>
         </div>
@@ -305,11 +263,7 @@
     </div>
   </div>
 
-  <img
-    id="triangle-eight"
-    alt=""
-    src="assets/triangle_border_midnight_blue.svg"
-  />
+  <img id="triangle-eight" alt="" src="assets/triangle_border_midnight_blue.svg" />
   <img id="vector-seven" alt="" src="assets/vector_pink.svg" />
 </div>
 
@@ -320,9 +274,7 @@
       Have Any Project In Mind?
       <span class="color-dark-pink">Say Hello At</span>
     </p>
-    <a id="email" href="mailto:shemnyatti@gmail.com" target="_blank"
-      >shemnyatti@gmail.com</a
-    >
+    <a id="email" href="mailto:shemnyatti@gmail.com" target="_blank">shemnyatti@gmail.com</a>
   </div>
   <img id="rectangle-five" alt="" src="assets/rectangle_midnight_blue.svg" />
   <img id="triangle-nine" alt="" src="assets/triangle_humming_bird.svg" />
@@ -332,20 +284,11 @@
 <!-- ==============  Footer ================ -->
 <div id="social-links">
   <div class="flex-container">
-    <a href="https://github.com/ShemBrooklyne" target="_blank"
-      ><img src="assets/social/github.svg"
-    /></a>
-    <a href="https://www.instagram.com/shembrooklyne/" target="_blank"
-      ><img src="assets/social/insta.svg"
-    /></a>
-    <a href="https://twitter.com/shem_brooklyne" target="_blank"
-      ><img src="assets/social/twitter.svg"
-    /></a>
-    <a
-      href="https://www.linkedin.com/in/shem-brooklyne-3235771b7/"
-      target="_blank"
-      ><img src="assets/social/linkedin.svg"
-    /></a>
+    <a href="https://github.com/ShemBrooklyne" target="_blank"><img src="assets/social/github.svg" /></a>
+    <a href="https://www.instagram.com/shembrooklyne/" target="_blank"><img src="assets/social/insta.svg" /></a>
+    <a href="https://twitter.com/shem_brooklyne" target="_blank"><img src="assets/social/twitter.svg" /></a>
+    <a href="https://www.linkedin.com/in/shem-brooklyne-3235771b7/" target="_blank"><img
+        src="assets/social/linkedin.svg" /></a>
   </div>
 </div>
 
@@ -375,7 +318,7 @@
     $('a[href*="#"]:not([href="#"])').click(function () {
       if (
         location.pathname.replace(/^\//, "") ===
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         location.hostname === this.hostname
       ) {
         var target = $(this.hash);
